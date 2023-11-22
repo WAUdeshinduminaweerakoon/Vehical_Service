@@ -10,7 +10,7 @@
 <body>
 <section>
 	<div class="maindiv">
-	       <div><h1>Vehicle Service Booking System</h1></div>
+	       <div><h1>Vehicle Service System</h1></div>
 	       <div class="img"><img alt="" src="img/imagescar.png"></div>
 	       <div><h2>Reserve your vehicle service now!</h2></div>
 	     <div><form method="post" action="samlsso?SAML2.HTTPBinding=HTTP-POST"><input type="submit" value="Login" ></form></div> 
