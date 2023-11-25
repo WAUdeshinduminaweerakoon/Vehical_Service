@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
-    
-    
-    
+       
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,17 +13,10 @@
 <section>
 <div class="maindiv">
 	<h1>Make a reservation</h1>
-	<form method="post" action="Registartion">
+	<form method="post" action="registration">
 	<div >
 	 <table>
-        <tr>
-            <td><label for="fname">First Name:</label></td>
-            <td><input type="text" id="fname" name="fname" required></td>
-        </tr>
-        <tr>
-            <td><label for="lname">Last Name:</label></td>
-            <td><input type="text" id="lname" name="lname" required></td>
-        </tr>
+       
         <tr>
             <td><label for="uname">User Name:</label></td>
             <td><input type="text" id="uname" name="uname" required></td>
@@ -35,28 +25,21 @@
             <td><label for="email">Email:</label></td>
             <td><input type="email" id="name" name="email" required></td>
         </tr>
-        <tr>
-            <td><label for="phone">Phone Number:</label></td>
-            <td><input type="tel" id="phone" name="phone" required></td>
-        </tr>
+       
                 <tr>
-                <td><label for="country">Country:</label></td>
+                <td><label for="location">Location:</label></td>
                 <td>
-                    <select id="country" name="country">
-                        <option value="sl">Sri Lanka</option>
-                        <option value="usa">United States</option>
-                        <option value="canada">Canada</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="australia">Australia</option>
+                    <select id="location" name="location">
+                        <option value="co">Colombo</option>
+                        <option value="Ga">Galle</option>
+                        <option value="ka">Kaluthara</option>
+                        <option value="gam">Gampaha</option>
+                        
                         <!-- Add more countries as needed -->
                     </select>
                 </td>
          </tr>
          <tr>
-                <td><label for="location">Location:</label></td>
-                <td><input type="text" id="location" name="location"></td>
-         </tr>
-          <tr>
                 <td><label for="date">Date:</label></td>
                 <td><input type="date" id="date" name="date"></td>
             </tr>
@@ -70,7 +53,7 @@
            </tr>
            <tr>
                 <td><label for="mileage">Current Mileage:</label></td>
-                <td><input type="number" id="mileage" name="mileage"></td>
+                <td><input type="text" id="mileage" name="mileage"></td>
            </tr>
            <tr>
                 <td><label for="message">Message:</label></td>

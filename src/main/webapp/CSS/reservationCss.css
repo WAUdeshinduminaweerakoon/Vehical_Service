@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the container takes up at least the full viewport height */
+}
+
+.maindiv{
+    background-color: white;
+	border: 3px solid rgb(128, 0, 255);
+    padding: 20px;
+    
+	
+	
+}
