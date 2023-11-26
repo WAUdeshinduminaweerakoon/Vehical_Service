@@ -29,11 +29,10 @@
             </tr>
             <%
             List<Registration> registrations = (List<Registration>)request.getAttribute("registrations");
-            Date today = new Date(); // Get the current date and time
-            SimpleDateFormat dateTimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+            
             if (registrations != null) {
                 for (Registration registration : registrations) {
-                    Date registrationDateTime = dateTimeFormat.parse(registration.getDate() + " " + registration.getTime());
+                    
             %>
             <tr>
                 <td><%= registration.getDate() %></td>
@@ -45,11 +44,9 @@
                 <td>
                     <form method="post" action="DeleteRegistrationServlet">
                         <input type="hidden" name="registrationId" value="<%= registration.getBookingid() %>">
-                        <% if (registrationDateTime.compareTo(today) > 0) {  %>
+                        
                             <button type="submit" class="delete" onclick="return confirm('Are you sure you want to delete this registration?');">Delete</button>
-                        <% } else { %>
-                            <p>Closed</p>
-                        <% }  %>
+                        
                     </form>
                 </td>
             </tr>

@@ -14,7 +14,7 @@
 		<div class="img"><img alt="" src="image/img/car-logo.jpg"></div>
 		<div class="buttonA"><button><a href="reservation.jsp">Make a reservation</a></button></div>
 		<div class="buttonA"><button><a href="profile.jsp">View profile Information</a></</button></div>
-		<div class="buttonA"><button><a href="viewRes.jsp">View reservation</a></button></div>
+		<div class="buttonA"><button><a href="booking">View reservation</a></button></div>
 		<!--<a href="index.jsp">Log out</a>-->
 		<a href="logout?SAML2.HTTPBinding=HTTP-POST">Logout</a>
 	

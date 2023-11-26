@@ -20,7 +20,7 @@ import io.asgardeo.java.saml.sdk.util.SSOAgentConstants;
 import io.asgardeo.java.saml.sdk.bean.LoggedInSessionBean;
 import io.asgardeo.java.saml.sdk.bean.LoggedInSessionBean.SAML2SSO;
 
-@WebServlet("/view")
+@WebServlet("/booking")
 public class bookingServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -61,7 +61,7 @@ public class bookingServlet extends HttpServlet {
                 registrations.add(registration);
             }
 
-            request.setAttribute("reservations", registrations);
+            request.setAttribute("registrations", registrations);
 
         } catch (Exception e) {
             e.printStackTrace();

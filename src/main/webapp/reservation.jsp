@@ -1,5 +1,25 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ page import="io.asgardeo.java.saml.sdk.util.SSOAgentConstants" %>
+<%@ page import="io.asgardeo.java.saml.sdk.bean.LoggedInSessionBean" %>
+<%@ page import="io.asgardeo.java.saml.sdk.bean.LoggedInSessionBean.SAML2SSO" %>
+<%@ page import="java.util.Map" %>
+
+<%
+// Retrieve the session bean.
+LoggedInSessionBean sessionBean = (LoggedInSessionBean) session.getAttribute(SSOAgentConstants.SESSION_BEAN_NAME);
+// SAML response
+SAML2SSO samlResponse = sessionBean.getSAML2SSO();
+// Autheticated username
+String subjectId = samlResponse.getSubjectId();
+// Authenticated user's attributes
+Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
+
+//Generate and set CSRF token in the session
+String csrfToken = java.util.UUID.randomUUID().toString();
+session.setAttribute("csrfToken", csrfToken);
+%>
        
 <!DOCTYPE html>
 <html>
@@ -16,15 +36,24 @@
 	<form method="post" action="registration">
 	<div >
 	 <table>
-       
+      <% 
+        String username = null;
+        if (saml2SSOAttributes != null) {
+            for (Map.Entry<String, String> entry : saml2SSOAttributes.entrySet()) {
+                String attributeName = entry.getKey();
+                String attributeValue = entry.getValue();
+                if ("http://wso2.org/claims/username".equals(attributeName)) {
+                   username = attributeValue;
+                                    }
+                                    
+                                }
+                            }
+				        %> 
         <tr>
             <td><label for="uname">User Name:</label></td>
-            <td><input type="text" id="uname" name="uname" required></td>
+            <td><input type="text" id="" name="uname" required="required" value="<%=username %>"></td>
         </tr>
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td><input type="email" id="name" name="email" required></td>
-        </tr>
+        
        
                 <tr>
                 <td><label for="location">Location:</label></td>

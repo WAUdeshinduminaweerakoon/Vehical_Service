@@ -1,7 +1,7 @@
 package com.uniquedeveloper.registration;
 
 public class Registration {
-private String booking_id;
+    private String booking_id;
     private String date;
     private String time;
     private String location;
