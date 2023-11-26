@@ -34,8 +34,11 @@ session.setAttribute("csrfToken", csrfToken);
 <div class="maindiv">
 	<h1>Make a reservation</h1>
 	<form method="post" action="registration">
+	<!-- Add CSRF token to the form -->
+    <input type="hidden" name="csrfToken" value="<%= session.getAttribute("csrfToken") %>">
 	<div >
 	 <table>
+	 
       <% 
         String username = null;
         if (saml2SSOAttributes != null) {
@@ -125,9 +128,47 @@ session.setAttribute("csrfToken", csrfToken);
     var status = document.getElementById("status").value;
     if (status === "Registration was successful!") {
         swal("Success", "Registration was successful!", "success");
-    } else if (status === "Registration failed. Please try again.") {
+    } 
+    if (status === "Registration failed. Please try again.") {
         swal("Error", "Registration failed. Please try again.", "error");
     }
+    if(status == "empty"){
+    	swal("Wrong","Please fill all fields","error");
+    }
+    if(status == "invaliduser"){
+    	swal("Wrong","Invalid Username","error");
+    }
+    if(status == "invalidvehicle_no"){
+    	swal("Wrong","Invalid Vehicle Number","error");
+    }
+    if(status == "invalidmileage"){
+    	swal("Wrong","Incorrect mileage","error");
+    }
+    if(status == "invalidmsg"){
+    	swal("Wrong","Incorrect message","error");
+    }
+    if(status == "invaliddate"){
+    	swal("Wrong","Incorrect date","error");
+    }
+    if(status == "invalidtime"){
+    	swal("Wrong","Incorrect time","error");
+    }
+    if(status == "invalidlocation"){
+    	swal("Wrong","Incorrect location","error");
+    }
+    
+    
+    
 </script>
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
