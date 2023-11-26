@@ -98,6 +98,7 @@ session.setAttribute("csrfToken", csrfToken);
             </td>
         </tr>
         </table>
+        <div ><a href="booking">View reservation</a></div>
         <a href="index.jsp">Log out</a>
 	    
 	</div>

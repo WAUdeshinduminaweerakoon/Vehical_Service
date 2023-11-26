@@ -86,6 +86,7 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 			<th><h3><%=country %></h3></th>
 			</tr>
 		</table>
+		<a href="home.jsp">Back to Home</a>
 		<a href="index.jsp">Log out</a>
 	</div>
 	</div>

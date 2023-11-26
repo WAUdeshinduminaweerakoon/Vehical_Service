@@ -57,7 +57,9 @@
         </table>
     </div>
     <a href="home.jsp">Back to Home</a>
+    <div><a href="reservation.jsp">Make a reservation</a></div>
     <a href="logout?SAML2.HTTPBinding=HTTP-POST" class="logout">Log Out</a>
+    
         <div class="text">
            <span>Copyright  &copy | Udesh Indumina</span>
         </div>
