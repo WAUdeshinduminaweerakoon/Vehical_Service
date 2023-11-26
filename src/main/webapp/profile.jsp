@@ -23,7 +23,7 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 <link href="CSS/proCss.css" rel="stylesheet">
 </head>
 <body>
-<section>
+<section class = "MSection">
 	<div class="maindiv">
 	<div>
 	</div>
@@ -86,13 +86,17 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 			<th><h3><%=country %></h3></th>
 			</tr>
 		</table>
-		<a href="home.jsp">Back to Home</a>
-		<a href="index.jsp">Log out</a>
+		<div class="navigation">
+		    <a href="home.jsp" class="nav-link">Home</a>
+		    <a href="index.jsp" class="nav-link">Log out</a>
+       </div>
 	</div>
 	</div>
 	</div>
+	  <div><br></div>
 	
-		<span>Copyright  &copy | Udesh Indumina</span>
+		<span class="copyright">© 2023 | Udesh Indumina</span>
+
 	
 </section>
 </body>
