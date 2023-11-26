@@ -20,17 +20,17 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="CSS/profileCss.css" rel="stylesheet">
+<link href="CSS/proCss.css" rel="stylesheet">
 </head>
 <body>
 <section>
+	<div class="maindiv">
 	<div>
-	
 	</div>
 	     <h1>View profile information</h1>
 	<div>
 	<div>
-		<table>
+		<table class="table">
 		<% 
 					String uname = null;
 					String email = null;
@@ -88,6 +88,7 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 		</table>
 		<a href="home.jsp">Back to Home</a>
 		<a href="index.jsp">Log out</a>
+	</div>
 	</div>
 	</div>
 	

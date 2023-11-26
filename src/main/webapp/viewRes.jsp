@@ -8,13 +8,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link href="CSS/homeCss.css" rel="stylesheet">
 </head>
 <body>
    <div class="navbar">
-        <div class="logoname"><h1>Vehicle Service</h1></div>
+        
         
     </div>
     <section class="login">
+    <div class="maindiv">
     <div class="app-name"><h1>View Registration</h1></div>
     <div class="container">
         <table class="table">
@@ -62,6 +64,7 @@
     
         <div class="text">
            <span>Copyright  &copy | Udesh Indumina</span>
+        </div>
         </div>
     </section>
 </body>

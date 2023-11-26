@@ -15,20 +15,12 @@ body {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgb(128, 0, 255) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     
 	
-	
-}
-.img{
-	text-align: center;
-}
+	}
 .table th {
+	text-align: left;
     background-color: rgb(128, 0, 255);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
-  }
-.table td {
-    background-color: rgb(128, 128, 255);
-    font-size: 15px;
-    color: black;
-    letter-spacing: 0.03em;
-  }
+    padding: 10px 20px 10px 20px ;
+ }
