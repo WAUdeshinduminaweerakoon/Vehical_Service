@@ -60,10 +60,10 @@ session.setAttribute("csrfToken", csrfToken);
 				           <td><label for="location">Location:</label></td>
 				           <td>
 				                    <select id="location" name="location">
-				                        <option value="co">Colombo</option>
-				                        <option value="Ga">Galle</option>
-				                        <option value="ka">Kaluthara</option>
-				                        <option value="gam">Gampaha</option>
+				                        <option value="Colombo">Colombo</option>
+				                        <option value="Galle">Galle</option>
+				                        <option value="kaluthara">Kaluthara</option>
+				                        <option value="Gampaha">Gampaha</option>
 				                        
 				                        <!-- Add more countries as needed -->
 				                    </select>
@@ -104,7 +104,7 @@ session.setAttribute("csrfToken", csrfToken);
 			</form>
 			</div>
 			<div>
-				<span>Copyright  &copy | Udesh Indumina</span>
+				<span class="copyright">&copy 2023 | Udesh Indumina</span>
 		</div>
 </section>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

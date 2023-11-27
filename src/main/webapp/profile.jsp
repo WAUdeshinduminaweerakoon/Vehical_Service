@@ -95,7 +95,7 @@ Map<String, String> saml2SSOAttributes = samlResponse.getSubjectAttributes();
 	</div>
 	  <div><br></div>
 	
-		<span class="copyright">© 2023 | Udesh Indumina</span>
+		<span class="copyright">&copy 2023 | Udesh Indumina</span>
 
 	
 </section>

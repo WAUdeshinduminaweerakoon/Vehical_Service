@@ -5,10 +5,10 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="CSS/indexCss.css" rel="stylesheet">
+<link href="CSS/indCss.css" rel="stylesheet">
 </head>
 <body>
-<section>
+<section class ="Msection">
 	<div class="maindiv">
 	       <div><h1>Vehicle Service System</h1></div>
 	       <div class="img"><img alt="" src="image/img/imagescar.png"></div>
@@ -19,7 +19,8 @@
 
 
 	<div>
-		<span>Copyright  &copy | Udesh Indumina</span>
+	<br>
+		<span class="copyright">&copy 2023 | Udesh Indumina</span>
 	</div>
 	
 </section>
