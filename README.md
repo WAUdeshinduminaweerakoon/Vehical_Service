@@ -1,4 +1,5 @@
 # Vehical_Service
+
 Vehicle Service Reservation Web Application
 This repository contains a web application for vehicle service reservations, focusing on security, authentication, and access control. 
 The application is designed to mitigate OWASP Top 10 vulnerabilities and implement user authentication and access control using OIDC (OpenID Connect) or 
@@ -26,7 +27,9 @@ Configurable parameters in application.properties or web.xml.
 
 Setup Instructions
 
-Clone the Repository: https://github.com/WAUdeshinduminaweerakoon/Vehical_Service/
+my first Repository : https://github.com/WAUdeshinduminaweerakoon/Vehical_Service_Booking_System.git
+
+Clone the Repository: https://github.com/WAUdeshinduminaweerakoon/Vehical_Service.git
 Use the provided MySQL instance details to set up the database.
 Import the provided table schema into the isec_assessment2 database.
 Configure Application:
