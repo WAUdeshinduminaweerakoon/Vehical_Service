@@ -26,18 +26,18 @@ session.setAttribute("csrfToken", csrfToken);
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<link href="CSS/reservationCss.css" rel="stylesheet">
+<link href="CSS/reseCss.css" rel="stylesheet">
 </head>
 <body>
 <input type="hidden" id="status" value="<%= request.getAttribute("status")%>">
-<section>
+<section class = "Msection">
 	<div class="maindiv">
 			<h1>Make a reservation</h1>
 			<form method="post" action="registration">
 				<!-- Add CSRF token to the form -->
 			    <input type="hidden" name="csrfToken" value="<%= session.getAttribute("csrfToken") %>">
 				<div >
-				 <table>
+				 <table class="table">
 				      <% 
 				        String username = null;
 				        if (saml2SSOAttributes != null) {
@@ -93,17 +93,19 @@ session.setAttribute("csrfToken", csrfToken);
 				        </tr>
 				        <tr>
 				            <td colspan="4" align="center">
-				                <input type="submit" value="Submit">
+				                <input type="submit" value="Submit" class = "insubmit">
 				            </td>
 				       </tr>
 			        </table>
-			        <div ><a href="booking">View reservation</a></div>
-			        <a href="index.jsp">Log out</a>
+		          <div class="navigation">
+				        <a href="booking" class="nav-link">View reservation</a></div>
+				        <a href="index.jsp" class="nav-link">Log out</a>
 				    
-				</div>
-			</form>
+				   </div>
+		</form>
 			</div>
 			<div>
+			<br>
 				<span class="copyright">&copy 2023 | Udesh Indumina</span>
 		</div>
 </section>

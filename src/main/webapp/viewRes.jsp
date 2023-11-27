@@ -12,9 +12,8 @@
 </head>
 <body>
    <div class="navbar">
-        
-        
-    </div>
+   </div>
+   <section class="MSection">
     <section class="login">
     <div class="maindiv">
     <div class="app-name"><h1>View Registration</h1></div>
@@ -58,14 +57,17 @@
             %>
         </table>
     </div>
-    <a href="home.jsp">Back to Home</a>
-    <div><a href="reservation.jsp">Make a reservation</a></div>
-    <a href="logout?SAML2.HTTPBinding=HTTP-POST" class="logout">Log Out</a>
+    <div class="navigation">
+    <a href="home.jsp" class="nav-link">Back to Home</a>
+    <a href="reservation.jsp" class="nav-link">Make a reservation</a>
+    <a href="logout?SAML2.HTTPBinding=HTTP-POST" class="logout" class="nav-link">Log Out</a>
+    </div>
     
         <div class="text">
            <span>Copyright  &copy | Udesh Indumina</span>
         </div>
         </div>
+    </section>
     </section>
 </body>
 </html>
