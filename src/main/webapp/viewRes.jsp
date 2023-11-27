@@ -63,11 +63,14 @@
     <a href="logout?SAML2.HTTPBinding=HTTP-POST" class="logout" class="nav-link">Log Out</a>
     </div>
     
-        <div class="text">
+        
+        </div>
+         <div class="text">
+         <br>
            <span>Copyright  &copy | Udesh Indumina</span>
         </div>
-        </div>
     </section>
     </section>
+   
 </body>
 </html>
